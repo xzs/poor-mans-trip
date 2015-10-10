@@ -20,7 +20,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(morgan('combined'))
 
 app.get('/', routes.index);
-
 // REST API routes.
 
 

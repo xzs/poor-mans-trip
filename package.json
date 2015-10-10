@@ -6,18 +6,18 @@
     "start": "node app"
   },
   "dependencies": {
+    "async": "*",
+    "body-parser": "~1.5.2",
+    "expect.js": "0.3.1",
     "express": "4.8.5",
     "jade": "*",
-    "moment":"*",
-    "async":"*",
-    "winston":"*",
+    "method-override": "~2.1.2",
+    "mocha": "1.21.4",
+    "moment": "*",
+    "morgan": "~1.2.2",
     "paypal-rest-sdk": "~0.6.4",
-    "mocha":"1.21.4",
-    "superagent":"0.18.2",
-    "expect.js":"0.3.1",
-    "serve-favicon":"*",
-    "morgan"	 : "~1.2.2",
-	  "body-parser": "~1.5.2",
-	  "method-override": "~2.1.2"
+    "serve-favicon": "*",
+    "superagent": "0.18.2",
+    "winston": "*"
   }
 }
