@@ -8,10 +8,11 @@
  * Controller of the budgetAdventureApp
  */
 angular.module('budgetAdventureApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', function($scope) {
+
+    $scope.submit = function(search) {
+        console.log(search);
+        // compare the value against % allocated
+    }
+
+  }]);
