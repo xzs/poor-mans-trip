@@ -10,7 +10,6 @@ app.directive('integer', function() {
           return viewValue;
         } else {
           // it is invalid, return undefined (no model update)
-          console.log("here");
           ctrl.$setValidity('integer', false);
           return undefined;
         }

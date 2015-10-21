@@ -8,10 +8,24 @@
  * Controller of the budgetAdventureApp
  */
 angular.module('budgetAdventureApp')
-  .controller('MainCtrl', ['$scope', function($scope) {
+  .controller('MainCtrl',
+    [
+        '$scope',
+        'processingService',
+        function (
+            $scope,
+            processingService
+        )
+    {
+
+    var local = this;
 
     $scope.submit = function(search) {
-        // compare the value against % allocated
-    }
+        // Make API call to retrieve data
+        processingService.getFlightResponse().then(function (response) {
+            // parse the response
+            processingService.processFlightResponse(response);
+        });
+    };
 
   }]);
