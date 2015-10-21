@@ -1,17 +1,17 @@
 <div class="row">
-<form name="form" class="css-form" novalidate>
-
+  <form name="form" class="css-form" novalidate>
     <div style="padding-bottom: 10px;">
       <input type="number"
       class="form-control"
       placeholder="Enter your budget here!"
       ng-model="search"
+      name="search"
       integer
       />
     </div>
-    <span ng-show="form.size.$error.integer">This is not valid integer!</span>
+    <span ng-show="form.search.$error.integer">This is not valid number! Please enter an whole number</span>
     <div class="pull-right">
-      <a class="btn btn-sm btn-success" ng-click="submit(search)">Go!<span class="glyphicon glyphicon-ok"></span></a>
+      <a class="btn btn-sm btn-success" ng-click="submit(search)">Go! &nbsp;<span class="glyphicon glyphicon-ok"></span></a>
     </div>
   </form>
 </div>
