@@ -24,7 +24,7 @@ angular.module('budgetAdventureApp')
         // Make API call to retrieve data
         processingService.getFlightResponse().then(function (response) {
             // parse the response
-            processingService.processFlightResponse(response);
+            $scope.allFlights = processingService.processFlightResponse(response);
         });
     };
 
