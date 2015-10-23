@@ -28,4 +28,8 @@ angular.module('budgetAdventureApp')
         });
     };
 
+    $scope.saveTripPref = function() {
+        $scope.savedPref = true;
+    };
+
   }]);
